@@ -27,8 +27,8 @@ namespace Bedna
         public MainWindow()
         {
             InitializeComponent();
-            string hovno = this.CenaRoztoceni.SelectedItem.ToString();
-            string[] s = hovno.Split(' ');
+            string curritem = this.CenaRoztoceni.SelectedItem.ToString();
+            string[] s = curritem.Split(' ');
             typ = int.Parse(s[s.Length - 1]);
 
         }
