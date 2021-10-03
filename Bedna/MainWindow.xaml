@@ -1,0 +1,54 @@
+﻿<Window x:Class="Bedna.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bedna"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="473.541" Width="543.763">
+    <Grid>
+        <Label Content="Bedna" HorizontalAlignment="Left" Margin="49,29,0,0" VerticalAlignment="Top" Height="66" Width="130" FontSize="40" FontFamily="Stempel Garamond LT std" FontStyle="Italic"/>
+        <Label Content="Vhoďte hotovost:" HorizontalAlignment="Left" Margin="104,123,0,0" VerticalAlignment="Top"/>
+        <Label Content="Aktuální kredit:" HorizontalAlignment="Left" Margin="104,153,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cena roztočení:" HorizontalAlignment="Left" Margin="104,183,0,0" VerticalAlignment="Top"/>
+        <Label Content="Celkem vhozeno:" HorizontalAlignment="Left" Margin="104,213,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Hotovost" HorizontalAlignment="Left" Height="26" Margin="211,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="AktKredit"  HorizontalAlignment="Left" Height="26" Margin="211,153,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <ComboBox Name="CenaRoztoceni" HorizontalAlignment="Left" Height="26" Margin="211,183,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="10" IsSelected="True"></ComboBoxItem>
+            <ComboBoxItem Content="25"></ComboBoxItem>
+                <ComboBoxItem Content="50"></ComboBoxItem>
+            <ComboBoxItem Content="100"></ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="CelkemVHZ" HorizontalAlignment="Left" Height="26" Margin="211,213,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+
+        <Button Name="VlozKr" Content="Vložit kredit" HorizontalAlignment="Left" Margin="382,123,0,0" VerticalAlignment="Top" Width="102" Height="26" RenderTransformOrigin="0.5,0.5" Click="VlozKr_Click">
+            
+        </Button>
+        <Button x:Name="VyberKr" Content="Vybrat kredit" HorizontalAlignment="Left" Margin="382,154,0,0" VerticalAlignment="Top" Width="102" Height="26" RenderTransformOrigin="0.5,0.5" Click="VyberKr_Click">
+            
+        </Button>
+        <Button Name="ROZTOC" Content="ROZTOCIT VÁLCE!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="464" Margin="34,361,0,0" Height="61" FontSize="40" Click="ROZTOC_Click" FontFamily="Stempel Garamond LT std"/>
+        <Image Name="obr1" HorizontalAlignment="Left" Height="100" Margin="34,256,0,0" VerticalAlignment="Top" Width="124" />
+        <Image Name="obr2" HorizontalAlignment="Left" Height="100" Margin="204,256,0,0" VerticalAlignment="Top" Width="124" />
+        <Image Name="obr3" HorizontalAlignment="Left" Height="100" Margin="374,256,0,0" VerticalAlignment="Top" Width="124" />
+        <Label Content=".- Kč" HorizontalAlignment="Left" Margin="295,123,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            
+        </Label>
+        <Label Content=".- Kč" HorizontalAlignment="Left" Margin="295,153,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            
+        </Label>
+        <Label Content=".- Kč" HorizontalAlignment="Left" Margin="232,181,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="28" Width="34">
+            
+        </Label>
+        <Label Content=".- Kč" HorizontalAlignment="Left" Margin="256,213,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            
+        </Label>
+        <Label Content="ˇ" HorizontalAlignment="Left" Margin="230,350,0,0" VerticalAlignment="Top" FontFamily="Stempel Garamond LT std" FontSize="40" Height="29"/>
+
+
+
+
+
+    </Grid>
+</Window>
